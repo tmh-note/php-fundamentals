@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHP Note</title>
+    <link rel="stylesheet" href="../asset/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/prismjs/prism.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="text-center my-3">HTML</h1>
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#structrue" class="btn btn-link text-white">structrue</a><br>
+            <a href="#element" class="btn btn-link text-white">element</a><br>
+            <a href="#attribute" class="btn btn-link text-white">attribute</a><br>
+            <a href="#heading" class="btn btn-link text-white">heading</a><br>
+            <a href="#paragraph" class="btn btn-link text-white">paragraph</a><br>
+            <a href="#order_list" class="btn btn-link text-white">order_list</a><br>
+            <a href="#unorder_list" class="btn btn-link text-white">unorder_list</a><br>
+            <a href="#table" class="btn btn-link text-white">table</a><br>
+            <a href="#input" class="btn btn-link text-white">input</a><br>
+            <a href="#form" class="btn btn-link text-white">form</a><br>
+            <a href="#other_element" class="btn btn-link text-white">other_element</a><br>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="structrue">structrue</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;html&#x3E;
+                        &#x3C;head&#x3E;
+                            &#x3C;title&#x3E;Hello&#x3C;/title&#x3E;
+                        &#x3C;/head&#x3E;
+                        &#x3C;body&#x3E;
+                            &#x3C;h1&#x3E;Hello World!&#x3C;/h1&#x3E;
+                        &#x3C;/body&#x3E;
+                    &#x3C;/html&#x3E;
+                </code>
+            </pre>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="element">element</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;open tag&#x3E; ... &#x3C;close tag&#x3E;
+                </code>
+            </pre>
+            <h5 class="text-muted">example</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;h1&#x3E; Hello World! &#x3C;/h1&#x3E;
+                </code>
+            </pre>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="attribute">attribute</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;h1 key=value&#x3E;
+                </code>
+            </pre>
+            <h5 class="text-muted">example</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;h1 title=&#x22;This is heading&#x22;&#x3E; Hello World! &#x3C;/h1&#x3E;
+                </code>
+            </pre>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="heading">heading</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;h1&#x3E;Heading 1&#x3C;/h1&#x3E;
+                    &#x3C;h2&#x3E;Heading 2&#x3C;/h2&#x3E;
+                    &#x3C;h3&#x3E;Heading 3&#x3C;/h3&#x3E;
+                    &#x3C;h4&#x3E;Heading 4&#x3C;/h4&#x3E;
+                    &#x3C;h5&#x3E;Heading 5&#x3C;/h5&#x3E;
+                    &#x3C;h6&#x3E;Heading 6&#x3C;/h6&#x3E;
+                </code>
+            </pre>
+            <h5 class="text-muted">example</h5>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="paragraph">paragraph</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;p&#x3E;Lorem ipsum dolor sit ame&#x3C;/p&#x3E;
+                </code>
+            </pre>
+            <h5 class="text-muted">example</h5>
+            <p>Lorem ipsum dolor sit ame</p>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="order_list">order_list</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;ol&#x3E;
+                        &#x3C;li&#x3E;List 1&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;List 2&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;List 3&#x3C;/li&#x3E;
+                    &#x3C;/ol&#x3E;
+                </code>
+            </pre>
+            <h5 class="text-muted">example</h5>
+            <ol>
+                <li>List 1</li>
+                <li>List 2</li>
+                <li>List 3</li>
+            </ol>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="unorder_list">unorder_list</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;ul&#x3E;
+                        &#x3C;li&#x3E;List 1&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;List 2&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;List 3&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                </code>
+            </pre>
+            <h5 class="text-muted">example</h5>
+            <ul>
+                <li>List 1</li>
+                <li>List 2</li>
+                <li>List 3</li>
+            </ul>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="table">table</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;table&#x3E;
+                        &#x3C;tr&#x3E;
+                            &#x3C;th&#x3E;No&#x3C;/th&#x3E;
+                            &#x3C;th&#x3E;Name&#x3C;/th&#x3E;
+                            &#x3C;th&#x3E;Address&#x3C;/th&#x3E;
+                        &#x3C;/tr&#x3E;
+                        &#x3C;tr&#x3E;
+                            &#x3C;td&#x3E;1&#x3C;/td&#x3E;
+                            &#x3C;td&#x3E;Tony&#x3C;/td&#x3E;
+                            &#x3C;td&#x3E;Yangon&#x3C;/td&#x3E;
+                        &#x3C;/tr&#x3E;
+                        &#x3C;tr&#x3E;
+                            &#x3C;td&#x3E;2&#x3C;/td&#x3E;
+                            &#x3C;td&#x3E;Peter&#x3C;/td&#x3E;
+                            &#x3C;td&#x3E;Mandalay&#x3C;/td&#x3E;
+                        &#x3C;/tr&#x3E;
+                    &#x3C;/table&#x3E;
+                </code>
+            </pre>
+            <h5>Or</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;table&#x3E;
+                    &#x3C;thead&#x3E;
+                        &#x3C;tr&#x3E;
+                            &#x3C;th&#x3E;No&#x3C;/th&#x3E;
+                            &#x3C;th&#x3E;Name&#x3C;/th&#x3E;
+                            &#x3C;th&#x3E;Address&#x3C;/th&#x3E;
+                        &#x3C;/tr&#x3E;
+                    &#x3C;/thead&#x3E;
+                    &#x3C;tbody&#x3E;
+                        &#x3C;tr&#x3E;
+                            &#x3C;td&#x3E;1&#x3C;/td&#x3E;
+                            &#x3C;td&#x3E;Tony&#x3C;/td&#x3E;
+                            &#x3C;td&#x3E;Yangon&#x3C;/td&#x3E;
+                        &#x3C;/tr&#x3E;
+                        &#x3C;tr&#x3E;
+                            &#x3C;td&#x3E;2&#x3C;/td&#x3E;
+                            &#x3C;td&#x3E;Peter&#x3C;/td&#x3E;
+                            &#x3C;td&#x3E;Mandalay&#x3C;/td&#x3E;
+                        &#x3C;/tr&#x3E;
+                    &#x3C;/tbody&#x3E;
+                &#x3C;/table&#x3E;
+                </code>
+            </pre>
+            <h5 class="text-muted">example</h5>
+            <table class="table table-bordered">
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Tony</td>
+                    <td>Yangon</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Peter</td>
+                    <td>Mandalay</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="input">input</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;input type=&#x22;text&#x22;&#x3E;
+                    &#x3C;input type=&#x22;email&#x22;&#x3E;
+                    &#x3C;input type=&#x22;password&#x22;&#x3E;
+                    &#x3C;input type=&#x22;hidden&#x22;&#x3E;
+                    &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
+                    &#x3C;input type=&#x22;radio&#x22;&#x3E;
+                    &#x3C;input type=&#x22;submit&#x22;&#x3E;
+                    &#x3C;textarea&#x3E;&#x3C;/textarea&#x3E;
+                    &#x3C;select&#x3E;
+                        &#x3C;option&#x3E;Male&#x3C;/option&#x3E;
+                        &#x3C;option&#x3E;Female&#x3C;/option&#x3E;
+                    &#x3C;/select&#x3E;
+                    &#x3C;input type=&#x22;file&#x22;&#x3E;
+                    &#x3C;label&#x3E;&#x3C;/label&#x3E;
+                </code>
+            </pre>
+            <h5 class="text-muted">example</h5>
+            <input type="text"><br><br>
+            <input type="email"><br><br>
+            <input type="password"><br><br>
+            <input type="hidden">
+            <input type="checkbox"><br><br>
+            <input type="radio"><br><br>
+            <input type="submit"><br><br>
+            <textarea></textarea><br><br>
+            <select><br><br>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <input type="file"><br><br>
+            <label></label><br><br>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="form">form</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;form action=&#x22;&#x22; method=&#x22;&#x22; enctype=&#x22;multipart/form-data&#x22;&#x3E;
+
+                        &#x3C;label&#x3E;Username&#x3C;/label&#x3E;
+                        &#x3C;input type=&#x22;text&#x22;&#x3E;
+
+                        &#x3C;label&#x3E;Email&#x3C;/label&#x3E;
+                        &#x3C;input type=&#x22;email&#x22;&#x3E;
+
+                        &#x3C;label&#x3E;Password&#x3C;/label&#x3E;
+                        &#x3C;input type=&#x22;password&#x22;&#x3E;
+
+                        &#x3C;input type=&#x22;hidden&#x22;&#x3E;
+
+                        &#x3C;label&#x3E;Male&#x3C;/label&#x3E;
+                        &#x3C;input type=&#x22;radio&#x22;&#x3E;
+
+                        &#x3C;label&#x3E;Female&#x3C;/label&#x3E;
+                        &#x3C;input type=&#x22;radio&#x22;&#x3E;
+
+                        &#x3C;label&#x3E;Image&#x3C;/label&#x3E;
+                        &#x3C;input type=&#x22;file&#x22;&#x3E;
+
+                        &#x3C;textarea&#x3E;&#x3C;/textarea&#x3E;
+
+                        &#x3C;select&#x3E;
+                            &#x3C;option&#x3E;Male&#x3C;/option&#x3E;
+                            &#x3C;option&#x3E;Female&#x3C;/option&#x3E;
+                        &#x3C;/select&#x3E; 
+
+                        &#x3C;label&#x3E;Remember&#x3C;/label&#x3E;
+                        &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
+
+                        &#x3C;input type=&#x22;submit&#x22;&#x3E;
+                    &#x3C;/form&#x3E;  
+                </code>
+            </pre>
+            <form action="" method="" enctype="multipart/form-data">
+
+                <label>Username</label>
+                <input type="text"><br><br>
+
+                <label>Email</label>
+                <input type="email"><br><br>
+
+                <label>Password</label>
+                <input type="password"><br><br>
+
+                <input type="hidden">
+
+                <label>Male</label>
+                <input type="radio"><br><br>
+
+                <label>Female</label>
+                <input type="radio"><br><br>
+
+                <label>Image</label>
+                <input type="file"><br><br>
+
+                <textarea></textarea><br><br>
+
+                <select><br><br>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br><br>
+
+                <label>Remember</label>
+                <input type="checkbox"><br><br>
+
+                <input type="submit">
+            </form>
+        </div>
+
+        <div class="col-md-10 offset-md-1 mt-5">
+            <h5 id="other_element">other_element</h5>
+            <pre>
+                <code class="language-html" >
+                    &#x3C;b&#x3E;Bold&#x3C;/b&#x3E;
+                    &#x3C;u&#x3E;Underline&#x3C;/u&#x3E;
+                    &#x3C;i&#x3E;Italic&#x3C;/i&#x3E;
+                    &#x3C;s&#x3E;Stirke&#x3C;/s&#x3E;
+                    &#x3C;hr&#x3E;
+                    &#x3C;br&#x3E;
+                    &#x3C;div&#x3E;Lorem ipsum dolor sit amet.&#x3C;/div&#x3E;
+                    &#x3C;span&#x3E;Lorem ipsum dolor sit amet.&#x3C;/span&#x3E;
+                </code>
+            </pre>
+            <b>Bold</b><br>
+            <u>Underline</u><br>
+            <i>Italic</i><br>
+            <s>Stirke</s><br>
+            <hr><br>
+            <br><br>
+            <div>Lorem ipsum dolor sit amet.</div><br>
+            <span>Lorem ipsum dolor sit amet.</span><br>
+        </div>
+
+    </div> <!-- .container -->
+
+    <script src="../asset/jquery/jquery.min.js"></script>
+    <script src="../asset/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../asset/prismjs/prism.js"></script>
+</body>
+
+</html>

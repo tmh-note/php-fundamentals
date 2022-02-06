@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHP Note</title>
+    <link rel="stylesheet" href="../asset/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/prismjs/prism.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center my-3">PHP String Functions</h1>
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#strlen" class="btn btn-link text-white">strlen</a><br>
+            <a href="#str_replace" class="btn btn-link text-white">str_replace</a><br>
+            <a href="#substr" class="btn btn-link text-white">substr</a><br>
+            <a href="#trim" class="btn btn-link text-white">trim</a><br>
+            <a href="#rtrim" class="btn btn-link text-white">rtrim</a><br>
+            <a href="#ltrim" class="btn btn-link text-white">ltrim</a><br>
+            <a href="#strtolower" class="btn btn-link text-white">strtolower</a><br>
+            <a href="#strtoupper" class="btn btn-link text-white">strtoupper</a><br>
+            <a href="#ucwords" class="btn btn-link text-white">ucwords</a><br>
+            <a href="#ucfirst" class="btn btn-link text-white">ucfirst</a><br>
+        </div>
+
+        <h1 class="text-center my-3">PHP Array Functions</h1>
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#print_r" class="btn btn-link text-white">print_r</a><br>
+            <a href="#count" class="btn btn-link text-white">count</a><br>
+            <a href="#in_array" class="btn btn-link text-white">in_array</a><br>
+            <a href="#max" class="btn btn-link text-white">max</a><br>
+            <a href="#min" class="btn btn-link text-white">min</a><br>
+            <a href="#sort" class="btn btn-link text-white">sort</a><br>
+            <a href="#rsort" class="btn btn-link text-white">rsort</a><br>
+            <a href="#array_values" class="btn btn-link text-white">array_values</a><br>
+            <a href="#array_keys" class="btn btn-link text-white">array_keys</a><br>
+            <a href="#explode" class="btn btn-link text-white">explode</a><br>
+            <a href="#implode" class="btn btn-link text-white">implode</a><br>
+            <a href="#array_push" class="btn btn-link text-white">array_push</a><br>
+        </div>
+
+        <h1 class="text-center my-3">PHP Other Functions</h1>
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#is_bool" class="btn btn-link text-white">is_bool</a><br>
+            <a href="#is_int" class="btn btn-link text-white">is_int</a><br>
+            <a href="#is_string" class="btn btn-link text-white">is_string</a><br>
+            <a href="#is_array" class="btn btn-link text-white">is_array</a><br>
+            <a href="#isset" class="btn btn-link text-white">isset</a><br>
+            <a href="#empty" class="btn btn-link text-white">empty</a><br>
+            <a href="#unset" class="btn btn-link text-white">unset</a><br>
+            <a href="#var_dump" class="btn btn-link text-white">var_dump</a><br>
+            <a href="#file_exists" class="btn btn-link text-white">file_exists</a><br>
+            <a href="#file_get_contents" class="btn btn-link text-white">file_get_contents</a><br>
+            <a href="#file_put_content" class="btn btn-link text-white">file_put_content</a><br>
+            <a href="#unlink" class="btn btn-link text-white">unlink</a><br>
+        </div>
+
+        <h1 class="text-center my-3">PHP String Functions Example</h1>
+        <div class="col-md-10 offset-md-1">
+            <h5 id="strlen">strlen</h5>
+            <pre>
+                <code class="language-php" >
+                $str = 'abcdef';
+                echo strlen($str); // 6
+
+                $str = ' ab cd ';
+                echo strlen($str); // 7
+                </code>
+            </pre>
+            <h5 id="str_replace">str_replace</h5>
+            <pre>
+                <code class="language-php" >
+                    $str = 'Hello World!';
+                    $search = 'World!';
+                    $replace = 'PHP';
+                    echo str_replace($search, $replace, $str);
+                </code>
+            </pre>
+            <h5 id="substr">substr</h5>
+            <pre>
+                <code class="language-php" >
+                    echo substr('abcdef', 1);     // bcdef
+                    echo substr('abcdef', 1, 3);  // bcd
+                    echo substr('abcdef', 0, 4);  // abcd
+                    echo substr('abcdef', 0, 8);  // abcdef
+                    echo substr('abcdef', -1, 1); // f
+                </code>
+            </pre>
+            <h5 id="trim">trim</h5>
+            <pre>
+                <code class="language-php" >
+                    $str = '   Hello World!   ';
+                    echo strlen($str);
+                    echo strlen(trim($str));
+                </code>
+            </pre>
+            <h5 id="rtrim">rtrim</h5>
+            <pre>
+                <code class="language-php" >
+                    $str = 'Hello World!   ';
+                    echo strlen($str);
+                    echo strlen(rtrim($str));
+                </code>
+            </pre>
+            <h5 id="ltrim">ltrim</h5>
+            <pre>
+                <code class="language-php" >
+                    $str = 'Hello World!   ';
+                    echo strlen($str);
+                    echo strlen(ltrim($str));
+                </code>
+            </pre>
+            <h5 id="strtolower">strtolower</h5>
+            <pre>
+                <code class="language-php" >
+                    $str = "Mary Had A Little Lamb and She LOVED It So";
+                    $str = strtolower($str);
+                    echo $str; // Prints mary had a little lamb and she loved it so
+                </code>
+            </pre>
+            <h5 id="strtoupper">strtoupper</h5>
+            <pre>
+                <code class="language-php" >
+                    $str = "Mary Had A Little Lamb and She LOVED It So";
+                    $str = strtoupper($str);
+                    echo $str; // Prints MARY HAD A LITTLE LAMB AND SHE LOVED IT SO
+                </code>
+            </pre>
+            <h5 id="ucwords">ucwords</h5>
+            <pre>
+                <code class="language-php" >
+                    $foo = 'hello world!';
+                    $foo = ucwords($foo);             // Hello World!
+                </code>
+            </pre>
+            <h5 id="ucfirst">ucfirst</h5>
+            <pre>
+                <code class="language-php" >
+                    $foo = 'hello world!';
+                    $foo = ucfirst($foo); 
+                </code>
+            </pre>
+        </div>
+
+        <h1 class="text-center my-3">PHP Array Functions Example</h1>
+        <div class="col-md-10 offset-md-1">
+            <h5 id="print_r">print_r</h5>
+            <pre>
+                <code class="language-php" >
+                    $a = array ('a' => 'apple', 'b' => 'banana', 'c' => array ('x', 'y', 'z'));
+                    print_r ($a);
+                    //result
+                    Array
+                    (
+                        [a] => apple
+                        [b] => banana
+                        [c] => Array
+                            (
+                                [0] => x
+                                [1] => y
+                                [2] => z
+                            )
+                    )
+                </code>
+            </pre>
+            <h5 id="count">count</h5>
+            <pre>
+                <code class="language-php" >
+                $food = array('orange', 'banana', 'apple');
+                echo count($food); // output 3
+                </code>
+            </pre>
+            <h5 id="in_array">in_array</h5>
+            <pre>
+                <code class="language-php" >
+                $food = array('orange', 'banana', 'apple');
+                if (in_array("orange", $os)) {
+                    echo "found";
+                }
+                </code>
+            </pre>
+            <h5 id="max">max</h5>
+            <pre>
+                <code class="language-php" >
+                    echo max(2, 3, 1, 6, 7);  // 7
+                    echo max(array(2, 4, 5)); // 5
+                </code>
+            </pre>
+            <h5 id="min">min</h5>
+            <pre>
+                <code class="language-php" >
+                    echo min(2, 3, 1, 6, 7);  // 1
+                    echo min(array(2, 4, 5)); // 2
+                </code>
+            </pre>
+            <h5 id="sort">sort</h5>
+            <pre>
+                <code class="language-php" >
+                    $fruits = array("lemon", "orange", "banana", "apple");
+                    sort($fruits); 
+                    print_r($fruits) // Array ( [0] => apple [1] => banana [2] => lemon [3] => orange )
+                </code>
+            </pre>
+            <h5 id="rsort">rsort</h5>
+            <pre>
+                <code class="language-php" >
+                    $fruits = array("lemon", "orange", "banana", "apple");
+                    rsort($fruits);
+                    print_r($fruits) // Array ( [0] => orange [1] => lemon [2] => banana [3] => apple )
+                </code>
+            </pre>
+            <h5 id="array_values">array_values</h5>
+            <pre>
+                <code class="language-php" >
+                    $array = array("size" => "XL", "color" => "gold");
+                    print_r(array_values($array));
+                    /*Array
+                    (
+                        [0] => XL
+                        [1] => gold
+                    )*/
+                </code>
+            </pre>
+            <h5 id="array_keys">array_keys</h5>
+            <pre>
+                <code class="language-php" >
+                    $array = array(0 => 100, "color" => "red");
+                    print_r(array_keys($array));
+                    /*Array
+                    (
+                        [0] => 0
+                        [1] => color
+                    )*/
+                </code>
+            </pre>
+            <h5 id="explode">explode</h5>
+            <pre>
+                <code class="language-php" >
+                    $pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
+                    $pieces = explode(" ", $pizza);
+                    echo $pieces[0]; // piece1
+                    echo $pieces[1]; // piece2
+                </code>
+            </pre>
+            <h5 id="implode">implode</h5>
+            <pre>
+                <code class="language-php" >
+                    $array = array('lastname', 'email', 'phone');
+                    $comma_separated = implode(",", $array);
+                    
+                    echo $comma_separated; // lastname,email,phone
+                </code>
+            </pre>
+            <h5 id="array_push">array_push</h5>
+            <pre>
+                <code class="language-php" >
+                    $stack = array("orange", "banana");
+                    array_push($stack, "apple", "raspberry");
+                    print_r($stack);
+                </code>
+            </pre>
+        </div>
+
+    </div>
+
+    <script src="../asset/jquery/jquery.min.js"></script>
+    <script src="../asset/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../asset/prismjs/prism.js"></script>
+</body>
+
+</html>

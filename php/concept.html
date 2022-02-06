@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHP Note</title>
+    <link rel="stylesheet" href="../asset/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/prismjs/prism.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="text-center my-3">PHP Output</h1>
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#echo" class="btn btn-link text-white">echo</a><br>
+            <a href="#print" class="btn btn-link text-white">print</a><br>
+            <a href="#var_dump" class="btn btn-link text-white">var_dump</a><br>
+        </div>
+
+        <h1 class="text-center my-3">PHP Variable</h1>
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#string" class="btn btn-link text-white">string</a><br>
+            <a href="#integer" class="btn btn-link text-white">integer</a><br>
+            <a href="#float" class="btn btn-link text-white">float</a><br>
+            <a href="#boolean" class="btn btn-link text-white">boolean</a><br>
+            <a href="#array" class="btn btn-link text-white">array</a><br>
+        </div>
+
+        <h1 class="text-center my-3">PHP Array</h1>
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#indexed_array" class="btn btn-link text-white">indexed_array</a><br>
+            <a href="#associative_array" class="btn btn-link text-white">associative_array</a><br>
+            <a href="#multidimensional_array" class="btn btn-link text-white">multidimensional_array</a><br>
+        </div>
+
+        <h1 class="text-center my-3">PHP Operator</h1>
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#arithmetic_operators" class="btn btn-link text-white">Arithmetic operators</a><br>
+            <a href="#assignment_operators" class="btn btn-link text-white">Assignment operators</a><br>
+            <a href="#comparison_operators" class="btn btn-link text-white">Comparison operators</a><br>
+            <a href="#increment_decrement_operators" class="btn btn-link text-white">Increment/Decrement operators</a><br>
+            <a href="#logical_operators" class="btn btn-link text-white">Logical operators</a><br>
+            <a href="#string_operators" class="btn btn-link text-white">String operators</a><br>
+        </div>
+
+        <div class="col-md-10 offset-md-1 bg-dark ">
+            <a href="#condition" class="btn btn-link text-white">Condition</a><br>
+            <a href="#loop" class="btn btn-link text-white">Loop</a><br>
+            <a href="#function" class="btn btn-link text-white">Function</a><br>
+            <a href="#session" class="btn btn-link text-white">Session</a><br>
+            <a href="#cookie" class="btn btn-link text-white">Cookie</a><br>
+        </div>
+
+        <h1 class="text-center my-3">PHP Output Example</h1>
+        <div class="col-md-10 offset-md-1">
+            <h5 id="echo">echo</h5>
+            <pre>
+                <code class="language-php" >
+                    echo "Hello PHP!"
+                </code>
+            </pre>
+            <h5 id="print">print</h5>
+            <pre>
+                <code class="language-php" >
+                    print "Hello PHP!"
+                </code>
+            </pre>
+            <h5 id="var_dump">var_dump</h5>
+            <pre>
+                <code class="language-php" >
+                    var_dump("Hello PHP!")
+                </code>
+            </pre>
+        </div>
+
+        <h1 class="text-center my-3">PHP Variable Example</h1>
+        <div class="col-md-10 offset-md-1">
+            <h5 id="string">string</h5>
+            <pre>
+                <code class="language-php" >
+                    $msg = "Hello World!";
+                    var_dump($msg);
+                </code>
+            </pre>
+            <h5 id="integer">integer</h5>
+            <pre>
+                <code class="language-php" >
+                    $msg = 12345;
+                    var_dump($msg);
+                </code>
+            </pre>
+            <h5 id="float">float</h5>
+            <pre>
+                <code class="language-php" >
+                    $msg = 12345.789;
+                    var_dump($msg);
+                </code>
+            </pre>
+            <h5 id="boolean">boolean</h5>
+            <pre>
+                <code class="language-php" >
+                    $msg = true; // or $msg = false;
+                    var_dump($msg);
+                </code>
+            </pre>
+            <h5 id="array">array</h5>
+            <pre>
+                <code class="language-php" >
+                    $msg = [1, 2, 3, 4, 5];
+                    var_dump($msg);
+                </code>
+            </pre>
+        </div>
+
+        <h1 class="text-center my-3">PHP Array Example</h1>
+        <div class="col-md-10 offset-md-1">
+            <h5 id="indexed_array">indexed_array</h5>
+            <pre>
+                <code class="language-php" >
+                    $array = array(1, 2, 3, 4, 5); // as of PHP 5.4
+                    $array = [1, 2, 3, 4, 5];
+                </code>
+            </pre>
+            <h5 id="associative_array">associative_array</h5>
+            <pre>
+                <code class="language-php" >
+                    $array = [
+                        "foo" => "bar",
+                        "bar" => "foo",
+                    ];
+                </code>
+            </pre>
+            <h5 id="multidimensional_array">multidimensional_array</h5>
+            <pre>
+                <code class="language-php" >
+                    $array = [
+                    "foo" => "bar",
+                    "bar" => [1, 2, 3, 4, 5],
+                    "foobar" => [
+                            "foo" => "bar",
+                            "bar" => "foo",
+                        ]
+                    ];
+                </code>
+            </pre>
+        </div>
+
+        <h1 class="text-center my-3">PHP Operator Example</h1>
+        <div class="col-md-10 offset-md-1">
+            <h5 id="arithmetic_operators">Arithmetic operators</h5>
+            <pre>
+                <code class="language-php" >
+                    echo 5 + 3;     // prints 8
+                    echo 5 - 3;     // prints 2
+                    echo 5 * 3;     // prints 15
+                    echo 6 / 3;     // prints 2
+                    echo 6 % 3;     // prints 0
+                </code>
+            </pre>
+            <h5 id="assignment_operators">Assignment operators</h5>
+            <pre> 
+                <code class="language-php" >
+                    $a = 3;
+                    $a += 5; // sets $a to 8, as if we had said: $a = $a + 5;
+                    $b = "Hello ";
+                    $b .= "There!"; // sets $b to "Hello There!", just like $b = $b . "There!";
+                </code>
+            </pre>
+            <h5 id="comparison_operators">Comparison operators</h5>
+            <pre> 
+                <code class="language-php" >
+                    var_dump(1 == 1); // true
+                    var_dump(1 != 2); // false
+                    var_dump(1 > 2); // false
+                    var_dump(1 < 2); // true
+                    var_dump(1 >= 2); // false
+                    var_dump(1 <= 2); // true
+                </code>
+            </pre>
+            <h5 id="increment_decrement_operators">Increment/Decrement operators</h5>
+            <pre> 
+                <code class="language-php" >
+                    // increment
+                    $i = 1;
+                    echo $i; // 1
+                    $i += 1;
+                    echo $i; // 2
+                    $i++;
+                    echo $i; // 3
+                    echo ++$i; // 4
+
+                    // decrement
+                    $i = 5;
+                    echo $i; // 5
+                    $i -= 1;
+                    echo $i; // 4
+                    $i--;
+                    echo $i; // 3
+                    echo --$i;  //2
+                </code>
+            </pre>
+            <h5 id="logical_operators">Logical operators</h5>
+            <pre> 
+                <code class="language-php" >
+                    var_dump(false and true); // false
+                    var_dump(false or true); // true
+                    var_dump(false && true); // false
+                    var_dump(false || true); // true
+                </code>
+            </pre>
+            <h5 id="string_operators">String operators</h5>
+            <pre> 
+                <code class="language-php" >
+                    $a = "Hello ";
+                    $b = $a . "World!"; // now $b contains "Hello World!"
+                    
+                    $a = "Hello ";
+                    $a .= "World!";     // now $a contains "Hello World!"
+                </code>
+            </pre>
+        </div>
+
+        <div class="col-md-10 offset-md-1">
+            <h5 id="session">Session</h5>
+            <pre>
+                <code class="language-php" >
+                    session_start();
+
+                    $_SESSION['msg'] = 'Hello PHP';
+                    echo $_SESSION['msg'];
+
+                    // remove session variables
+                    unset($_SESSION['msg']);
+
+                    // remove all session variables
+                    session_unset();
+
+                    // destroy the session
+                    session_destroy();
+                </code>
+            </pre>
+        </div>
+
+        <div class="col-md-10 offset-md-1">
+            <h5 id="cookie">Cookie</h5>
+            <pre>
+                <code class="language-php" >
+                    Setting new cookie
+                    ============================= 
+                    setcookie("msg","Hello PHP",time()+60); // 1 minute
+                        
+                    Getting Cookie
+                    =============================
+                    echo $_COOKIE["msg"];
+                    
+                    Updating Cookie
+                    =============================
+                    setcookie("msg","Hello World");
+                    echo $_COOKIE["msg"];
+                    
+                    Deleting Cookie
+                    ==============================
+                    unset($_COOKIE["msg"]);
+                    /*Or*/
+                    setcookie("yourcookie","yourvalue",time()-1);
+                    /*it expired so it's deleted*/
+                </code>
+            </pre>
+        </div>
+
+    </div> <!-- .container -->
+
+    <script src="../asset/jquery/jquery.min.js"></script>
+    <script src="../asset/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../asset/prismjs/prism.js"></script>
+</body>
+
+</html>

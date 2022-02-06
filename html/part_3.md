@@ -1,0 +1,90 @@
+## Table
+
+```html
+<table>
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Tony</td>
+        <td>Yangon</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Peter</td>
+        <td>Mandalay</td>
+    </tr>
+</table>
+```
+`Result`
+<table>
+    <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Tony</td>
+        <td>Yangon</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Peter</td>
+        <td>Mandalay</td>
+    </tr>
+</table>
+
+## Table2
+
+```html
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Tony</td>
+            <td>Yangon</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peter</td>
+            <td>Mandalay</td>
+        </tr>
+    </tbody>
+</table>
+
+```
+`Result`
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Tony</td>
+            <td>Yangon</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peter</td>
+            <td>Mandalay</td>
+        </tr>
+    </tbody>
+</table>
+
+
