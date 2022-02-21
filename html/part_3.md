@@ -87,4 +87,4 @@
     </tbody>
 </table>
 
-
+- [Go Part 4](./part_4.md)

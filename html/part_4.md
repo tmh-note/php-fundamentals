@@ -54,3 +54,5 @@
     <input type="submit">
 </form>  
 ```
+
+- [Go Part 5](./part_5.md)

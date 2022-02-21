@@ -30,3 +30,5 @@
 ```html
 <h1 title="This is heading"> Hello World! </h1>
 ```
+
+- [Go Part 2](./part_2.md)
