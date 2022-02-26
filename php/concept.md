@@ -8,7 +8,7 @@
 
 - [echo](#echo)
 - [print](#print)
-- [var_dump](#var_dump)
+- [var_dump](#vardump)
 - [Single quote Vs Double Quote](#single-quote-vs-double-quote)
 
 ## Variable And Data Types
@@ -49,7 +49,7 @@
 - [if else](#if-else)
 - [if elseif](#if-elseif)
 - [switch](#if-elseif)
-- [enum](#enum)
+- [match (PHP 8)](#match)
 
 ## Loop
 
@@ -63,17 +63,16 @@
 ## Function
 
 - [Build-in Function](#)
-- [User Defined Function](#)
-- [Parameters]()
-- [Default Parameters]()
-- [Named Arguments]()
-- [Type Declarations]()
-- [Strict Typing]()
-- [Return]()
-- [Variable Scopes]()
-- [Lambda Function]()
-- [Closures Function]()
-- [Arrow Function]()
+- [User Defined Function](#user-defined-function)
+- [Parameters](#parameters)
+- [Default Parameters](#default-parameters)
+- [Named Arguments (PHP 8)](#named-arguments)
+- [Type Declarations (PHP 7.4)](#type-declarations)
+- [Return](#return)
+- [Variable Scopes](#variable-scopes)
+- [Lambda Function](#lambda-function)
+- [Closures Function](#closures-function)
+- [Arrow Function (PHP 7.4)](#arrow-function)
 
 ## Syntax
 
@@ -161,14 +160,29 @@ FOOBAR;
 ?>
 ```
 
-## Heredoc
-
+## NowDoc
 ```php
 <?php
 echo <<<'FOOBAR'
 Hello World!
 FOOBAR;
 ?>
+```
+
+## One-line Comments
+
+```php
+// This is one line comments
+# This is one line comments
+```
+
+## Multi-line Comments
+
+```php
+/*
+This is 
+multi line comments
+*/
 ```
 
 ## Array
@@ -205,4 +219,228 @@ $array = [
         "bar" => "foo",
     ]
 ];
+```
+
+## Arithmetic operators
+
+```php
+echo 5 + 3;     // prints 8
+echo 5 - 3;     // prints 2
+echo 5 * 3;     // prints 15
+echo 6 / 3;     // prints 2
+echo 6 % 3;     // prints 0
+```
+
+## Assignment operators
+
+```php
+$a = 3;
+$a += 5; // sets $a to 8, as if we had said: $a = $a + 5;
+$b = "Hello ";
+$b .= "There!"; // sets $b to "Hello There!", just like $b = $b . "There!";
+```
+
+## Comparison operators
+
+```php
+var_dump(1 == 1); // true
+var_dump(1 != 2); // false
+var_dump(1 > 2); // false
+var_dump(1 < 2); // true
+var_dump(1 >= 2); // false
+var_dump(1 <= 2); // true
+```
+
+## Increment/Decrement operators
+
+```php
+// increment
+$i = 1;
+echo $i; // 1
+$i += 1;
+echo $i; // 2
+$i++;
+echo $i; // 3
+echo ++$i; // 4
+
+// decrement
+$i = 5;
+echo $i; // 5
+$i -= 1;
+echo $i; // 4
+$i--;
+echo $i; // 3
+echo --$i;  //2
+```
+
+## Logical operators
+
+```php
+var_dump(false and true); // false
+var_dump(false or true); // true
+var_dump(false && true); // false
+var_dump(false || true); // true
+```
+
+## String operators
+
+```php
+$a = "Hello ";
+$b = $a . "World!"; // now $b contains "Hello World!"
+
+$a = "Hello ";
+$a .= "World!";     // now $a contains "Hello World!"
+```
+
+## if
+
+```php
+if(boolean) {
+    // do something
+}
+
+if(true) {
+    echo "Hello World!";
+}
+```
+
+## if else
+
+```php
+$score = 50;
+if($score >= 40) {
+    echo "Pass";
+} else {
+    echo "Failed";
+}
+```
+
+## if elseif
+
+```php
+$age = 50;
+if($age < 18) {
+    echo "Young";
+} else if($age < 40) {
+    echo "Adult";
+} else {
+    echo "Old";
+}
+```
+
+## switch
+
+```php
+$day = 1
+switch ($day) {
+    case 0:
+        echo "Sunday";
+        break;
+    case 1:
+        echo "Monday";
+        break;
+    case 2:
+        echo "Tuesday";
+        break;
+}
+```
+
+## match
+
+```php
+// PHP 8
+$food = 'cake';
+
+$return_value = match ($food) {
+    'apple' => 'This food is an apple',
+    'bar' => 'This food is a bar',
+    'cake' => 'This food is a cake',
+};
+
+var_dump($return_value);
+```
+
+## User Defined Function
+
+```php
+function greeting() {
+    echo "Hello World!";
+}
+```
+
+## Parameters
+
+```php
+function greeting($name) {
+    echo "Hello $name";
+}
+```
+
+## Default Parameters
+
+```php
+function greeting($name = "World") {
+    echo "Hello $name";
+}
+```
+
+## Named Arguments
+
+```php
+function greeting($name = "World") {
+    echo "Hello $name";
+}
+greeting(name: "Mg Mg");
+```
+
+## Type Declarations
+
+```php
+function greeting(string $name) {
+    echo "Hello $name";
+}
+```
+
+## Return
+
+```php
+function greeting(string $name) {
+    return "Hello $name";
+}
+echo greeting("World");
+```
+
+## Variable Scopes
+
+```php
+$name = "Mg Mg"  // Global scope
+function greeting() {
+  $name = "Aung Aung"; // local scope
+  echo "Hello $name";
+}
+```
+
+## Lambda Function
+
+```php
+$greeting = function() {
+    echo "Hello World!";
+}
+$greeting();
+```
+
+## Closures Function
+
+```php
+$name = "World!";
+$greeting = function() use ($name) {
+    echo "Hello $name";
+}
+$greeting();
+```
+## Arrow Function
+
+```php
+$greeting = fn() => "Hello World!";
+$greeting();
 ```
